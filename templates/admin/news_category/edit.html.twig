@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar categorias de noticias{% endblock %}
+
+{% block body %}
+    <h1>Editar categorias de noticias</h1>
+
+    {{ include('admin/news_category/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a class="btn btn-secondary float-start ms-3" href="{{ path('app_admin_news_category_index') }}">Voltar</a>
+
+    {{ include('admin/news_category/_delete_form.html.twig') }}
+{% endblock %}
+
+
+
